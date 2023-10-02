@@ -123,18 +123,15 @@ export const simpleCalculatorSC = (operartor, num_1, num_2) => {
  * Crea un objeto con los operadores básicos +, -, *, ,/
  * Cada propieda del objeto debe realizar la operación correspodiente
  */
+/*El switch case se tranforma en esto, los case son los valores */
 let calculatorObject = {
     "+": (num_1, num_2) => num_1 + num_2,
     "-": (num_1, num_2) => num_1 - num_2,
     "*": (num_1, num_2) => num_1 * num_2,
-    "/": (num_1, num_2) => {
-        if (num_2 !== 0) {
-            return num_1 / num_2;
-        } else {
-            return "División por cero no permitida";
-        }
-    },
+    "/": (num_1, num_2) => num_1 / num_2,
+        
 };
+
 
 /**
  * Crea una función que haga uso de objeto que has creado arriba y que además devuelva DEFAULT_OPERARTOR_ERROR
@@ -148,3 +145,7 @@ export const simpleCalculatorObject = (operartor, num_1, num_2) => {
         return DEFAULT_OPERARTOR_ERROR;
     }
 };
+//Solucion profesor
+/*return calculatorObject[operartor]
+? calculatorObject[operartor](num_1, num_2)
+: DEFAULT_OPERARTOR_ERROR*/

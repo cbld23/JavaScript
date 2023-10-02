@@ -85,6 +85,7 @@ export const getNacionalty = () => {
 export const getPersonArray = () => {
   let personArray = Object.keys(person).map((key) => [key, person[key]]);
   return personArray;
+   //return Object.entries(), devuelve un array, solucion profesor
 };
 
 /**************************************************/
@@ -158,7 +159,7 @@ export const getLastPrincipalOfDirector = () => {
   if (notableFilmography.length > 0) {
     return notableFilmography[notableFilmography.length - 1];
   } else {
-    return null; // Retorna null si no hay películas en la filmografía notable.
+    return null; // Retorna null si no hay películas en la filmografía 
   }
 };
 
@@ -176,7 +177,7 @@ export const getDescriptionOfGandalf = () => {
   }
   
   return null; 
-  
+  //return movie.characters[1].description, solucion profesor
 };
 
 /**
@@ -232,5 +233,5 @@ export const getIndexOfFantasaiValue = () => {
     
   }
   
-  
+ //return Object.values(movie).indexOf("Fantasía"), solucion profesor 
 };

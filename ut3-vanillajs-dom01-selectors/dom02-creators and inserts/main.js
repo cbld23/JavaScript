@@ -14,7 +14,7 @@ p1.textContent = 'This is a paragraph';
 let p2 = document.createElement('p');
 p2.textContent = 'This is a another paragraph';
 // Agregar los elementos al cuerpo del documento
-document.body.append(imagen);
-document.body.append(h1);
-document.body.append(p1);
-document.body.append(p2);
+document.body.append(imagen, h1, p1, p2);
+//document.body.append(h1);
+//ocument.body.append(p1);
+//document.body.append(p2);

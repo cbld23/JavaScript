@@ -83,9 +83,9 @@ export const getNacionalty = () => {
  * @returns every person properties as array
  */
 export const getPersonArray = () => {
-  let personArray = Object.keys(person).map((key) => [key, person[key]]);
-  return personArray;
-   //return Object.entries(), devuelve un array, solucion profesor
+  /*let personArray = Object.keys(person).map((key) => [key, person[key]]);
+  return personArray;*/
+   return Object.entries(person);// devuelve un array, solucion profesor
 };
 
 /**************************************************/
